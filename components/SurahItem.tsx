@@ -39,7 +39,7 @@ export const SurahItem: React.FC<SurahItemProps> = ({ surah }) => {
           <View style={styles.contentContainer}>
             <Text style={styles.englishName}>{surah.englishName}</Text>
             <Text style={styles.details}>
-              {surah.revelationType.toUpperCase()} • {surah.numberOfAyahs} VERSES
+              {surah.revelationType.toUpperCase()} • {surah.ayahs?.length} VERSES
             </Text>
           </View>
           <Text style={styles.arabicName}>{surah.name}</Text>
