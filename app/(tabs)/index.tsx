@@ -38,7 +38,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View style={styles.header}>
         <Text style={styles.greeting}>Asslamualaikum</Text>
-        <Text style={styles.userName}>Tanvir Ahassan</Text>
+        <Text style={styles.userName}>Najam Ul Hassan</Text>
       </View>
       <View style={styles.lastReadCard}>
         <Text style={styles.lastReadLabel}>Last Read</Text>
@@ -58,6 +58,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: StatusBar.currentHeight || 0,
     backgroundColor: '#fff',
   },
   centerContainer: {
